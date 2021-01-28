@@ -1,0 +1,22 @@
+﻿<Window x:Class="Employees_efwpf.EmployeeDetails"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Employees_efwpf"
+        mc:Ignorable="d"
+        Title="EmployeeDetails" Height="450" Width="500" Loaded="Window_Loaded">
+    <StackPanel>
+        <TextBlock x:Name="fioTxt" Margin="10"/>
+        <TextBlock Margin="10">Фото</TextBlock>
+        <StackPanel Orientation="Horizontal">
+            <Image x:Name="photo" Height="100" Width="100"/>
+            <Button Margin="40" Width="80" HorizontalAlignment="Left" Click="ChangePhotoBtnClick" Background="Moccasin">Изменить</Button>
+        </StackPanel>
+        <TextBlock Margin="10">Дата принятия на работу:</TextBlock>
+        <TextBlock x:Name="arrivDateTxt" Margin="10, 0, 0, 0"/>
+        <TextBlock Margin="10">Дата Увольнения:</TextBlock>
+        <TextBlock x:Name="firedDateTxt" Margin="10, 0, 0, 0"/>
+        
+    </StackPanel>
+</Window>
